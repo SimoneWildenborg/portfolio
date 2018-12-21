@@ -1,0 +1,101 @@
+<html>
+<head>
+<link rel= "stylesheet" href="index.css">
+<script>
+
+//toevoegen
+
+function voegIemandToe(){
+var node = document.createElement("LI");  
+var sNaam = document.getElementById("myNewName").value;              			 // Create a <li> node
+var textnode = document.createTextNode(sNaam);         // Create a text node
+node.appendChild(textnode);                              // Append the text to <li>
+document.getElementById("myList").appendChild(node);     // Append <li> to <ul> with id="myList"
+}
+
+//filteren
+
+function myFilterFunction()
+{
+	var sSearchWord = document.getElementById("myFilterBox").value;
+	console.log(sSearchWord);
+
+
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById("myFilterBox");
+  filter = input.value.toUpperCase();
+
+  ul = document.getElementById("myList");
+  li = ul.getElementsByTagName('li');
+
+
+  
+  for (i = 0; i < li.length; i++) {
+    
+    txtValue = li[i].innerHTML;   
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+//lijst sorteren
+
+function sortList() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("myList");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* If next item is alphabetically lower than current item,
+        mark as a switch and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+</script>
+
+
+</head>
+<body>
+
+<input id="myFilterBox" type="text" onkeyup="myFilterFunction();" placeholder="filter">
+<input id="myNewName" type="text" placeholder="New contact">
+<button onclick="voegIemandToe();">Add</button>
+<button onclick="sortList();">Sort</button>
+
+
+	<ul id="myList">
+		<li>Toos</li>
+		<li>Marie</li>
+		<li>Simone</li>
+	</ul>
+
+
+
+
+</body>
+
+</html>
