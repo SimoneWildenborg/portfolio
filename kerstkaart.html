@@ -1,0 +1,282 @@
+<!doctype HTML>
+
+<html>
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        /* change textcolor*/
+            var currentColor = "#FF0000"
+            function wissel(){
+            var svgDoc = $('#mysvg')[0].contentDocument;
+                switch (currentColor){
+                    case "#FF0000": 
+                        $('#mytext', svgDoc).css('fill','lightSkyBlue');
+                        currentColor = "lightSkyBlue" ;
+                        break;
+                    case "lightSkyBlue": 
+                        $('#mytext', svgDoc).css('fill','#00FF00');
+                        currentColor="#00FF00";
+                        break;
+                    case "#00FF00": 
+                        $('#mytext', svgDoc).css('fill','yellow');
+                        currentColor = "yellow";
+                        break;
+                    case "yellow": 
+                        $('#mytext', svgDoc).css('fill','red');
+                        currentColor = "#FF0000";
+                        break;
+                        };
+                    setTimeout(wissel,1000);
+                    };
+
+    </script>
+</head>
+
+<body onload="wissel();"> 
+hallo
+    <svg id="mysvg" height="500" width="600">
+        <rect fill="#0a0a54" height="190" id="svg_2" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0" width="640" x="1.5" y="-0.5"/>
+        <rect fill="#0a0a54" height="1" id="svg_6" stroke="null" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0" width="0" x="40.5" y="87.5"/>
+        <rect fill="#134913" height="292" id="svg_1" stroke="#000000" stroke-linecap="round" stroke-width="0" width="641.99997" x="1.50002" y="188.5"/>
+        <path d="m52.5,206.5c0,0 35,-183 34.5,-183.5c-0.5,-0.5 30.5,185.5 30.5,185.5c0,0 -65,-2 -65,-2z" fill="#0b330b" id="svg_5" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+        <path d="m96.5,230.5c0,0 33,-224 33,-224c0,0 39,220 39,220c0,0 -72,4 -72,4z" fill="#014201" id="svg_18" stroke="#0e3f26" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+        <path d="m330.5,235.5c0,0 45,-227 45,-227c0,0 41,223 41,223c0,0 -86,4 -86,4z" fill="#113511" id="svg_19" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+        <path d="m395.5,241.5c0,0 29,-191 29,-191c0,0 39,189 39,189c0,0 -68,2 -68,2z" fill="#0c870c" id="svg_20" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+        <path d="m505.5,214.5c0,0 27,-114 27,-114c0,0 19,101 22,115c3,14 -49,-1 -49,-1z" fill="#056305" id="svg_21" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+        <path d="m271.91853,294.5c0,0 -69.10756,84.6718 -69.10756,84.6718c0,0 -198.30867,0 -198.30867,0c0,0 -1.00156,72.304 -1.50233,71.82832c-0.50078,-0.47568 642.50003,-7.13526 642.50003,-7.13526c0,0 -1.00156,-63.74169 -1.50234,-64.21738c-0.50078,-0.47568 -333.01833,-0.47568 -333.51911,-0.95137c-0.50078,-0.47568 16.52572,-84.19611 16.52572,-84.19611c0,0 -55.08574,0 -55.08574,0z" fill="#89894d" id="svg_31" stroke="#d3a67c" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+        <path d="m554.5,20.5c0,0 20,31 19.5,30.5c-0.5,-0.5 -19.5,-30.5 -19.5,-30.5z" fill="#056305" id="svg_24" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+        <path d="m537.5,237.5c0,0 43,-183 42.5,-183.5c-0.5,-0.5 31.5,181.5 29.5,184.5" fill="#013801" id="svg_25" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+        <path d="m145.5,295.5c0,0 2,-122 2,-122c0,0 111,-70 111,-70c0,0 110,68 110,68c0,0 3,122 3,122c0,0 -226,2 -226,2z" fill="#8e541d" id="svg_26" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null"/>
+       
+        <path d="m278.5,293.5c0,0 0,-76 -0.5,-76.5c-0.5,-0.5 41.5,-0.5 41,-1c-0.5,-0.5 0.5,77.5 0.5,77.5" fill="#494916" id="svg_27" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="3"/>
+        <rect fill="#f7f75d" height="47" id="svg_28" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="3" width="91" x="168.5" y="217.5"/>
+        <path d="m258.5,105.5c0,0 -127,80 -127,80c0,0 -6,-11 -6.5,-11.5c-0.5,-0.5 133.5,-83.5 133.5,-83.5c0,0 134,85 134,85c0,0 -8,8 -8.5,7.5c-0.5,-0.5 -125.5,-77.5 -125.5,-77.5z" fill="#d30808" id="svg_30" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null"/>
+        <line fill="none" id="svg_32" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="324.5" x2="629.5" y1="363.5" y2="361.5"/>
+        <line fill="none" id="svg_33" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="323.5" x2="630.5" y1="334.5" y2="331.5"/>
+        <line fill="none" id="svg_34" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="322.5" x2="322.5" y1="317.5" y2="372.5"/>
+        <line fill="none" id="svg_35" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="376.5" x2="377.5" y1="312.5" y2="371.5"/>
+        <line fill="none" id="svg_36" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="439.5" x2="441.5" y1="313.5" y2="372.5"/>
+        <line fill="none" id="svg_37" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="499.5" x2="500.5" y1="315.5" y2="371.5"/>
+        <line fill="none" id="svg_38" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="542.5" x2="543.5" y1="314.5" y2="371.5"/>
+        <line fill="none" id="svg_39" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="592.5" x2="593.5" y1="316.5" y2="371.5"/>
+        <line fill="none" id="svg_40" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="631.5" x2="631.5" y1="316.5" y2="369.5"/>
+        <line fill="none" id="svg_41" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="629.5" x2="648.5" y1="330.5" y2="313.5"/>
+        <line fill="none" id="svg_42" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="631.5" x2="649.5" y1="360.5" y2="348.5"/>
+        <line fill="none" id="svg_43" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="201.5" x2="2.50002" y1="332.5" y2="333.5"/>
+        <line fill="none" id="svg_45" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="200.5" x2="-0.5" y1="364.5" y2="364.5"/>
+        <line fill="none" id="svg_46" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="199.5" x2="200.5" y1="321.5" y2="372.5"/>
+        <line fill="none" id="svg_47" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="137.5" x2="138.5" y1="323.5" y2="370.5"/>
+        <line fill="none" id="svg_48" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="77.5" x2="77.5" y1="323.5" y2="368.5"/>
+        <line fill="none" id="svg_49" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="28.5" x2="28.5" y1="321.5" y2="371.5"/>
+        <ellipse class="go" cx="495.5" cy="272" fill="#ffffff" id="svg_50" rx="17" ry="18.5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="go" cx="496.5" cy="239.5" fill="#ffffff" id="svg_55" rx="11" ry="11" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="go" cx="494.5" cy="263.5" fill="#ffffff" id="svg_60" rx="1" ry="1" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="go" cx="494.5" cy="272.5" fill="#ffffff" id="svg_64" rx="1" ry="1" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="go" cx="495.5" cy="238.5" fill="#ffffff" id="svg_65" rx="1" ry="0" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="go" cx="494.5" cy="280.5" fill="#ffffff" id="svg_66" rx="1" ry="1" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5"/>
+  <path d="m490.5,244.5c-0.98932,0.036 -0.78476,0.9391 0.10001,1c0.89785,0.0618 1.44757,0.44615 2.18533,0.91467c0.69147,0.43912 1.71466,0.08533 2.51465,0.08533c0.90002,0 1.80002,-0.036 2.58935,-0.436l0.52664,-0.76267l0.43668,-0.74866" fill="none" id="svg_68" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5"/>
+  <line fill="none" id="svg_69" stroke="#fc9700" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="5" x1="494.5" x2="489.5" y1="237.5" y2="242.5"/>
+  <ellipse cx="500.5" cy="235.5" fill="#134913" id="svg_70" rx="2" ry="2" stroke="#000000" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse cx="490.5" cy="233.5" fill="#013801" id="svg_71" rx="2" ry="2" stroke="#000000" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0"/>
+  <rect fill="#ffffff" height="3" id="svg_73" stroke="#000000" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="0" x="271.5" y="141.5"/>
+  <path d="m257.5,122.5c0,0 -44,27 -44,27c0,0 85,-1 84.5,-1.5c-0.5,-0.5 -40.5,-25.5 -40.5,-25.5z" fill="#f7f774" id="svg_75" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="3"/>
+  <ellipse cx="311.5" cy="256.5" fill="#f7f774" id="svg_76" rx="1" ry="1" stroke="#000000" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="3"/>
+  <line fill="none" id="svg_195" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="round" stroke-width="7" x1="121.5" x2="259.5" y1="172.5" y2="85.5"/>
+  <line fill="none" id="svg_196" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="round" stroke-width="7" x1="258.5" x2="396.5" y1="84.5" y2="175.5"/>
+  <line fill="none" id="svg_199" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5" x1="531.5" x2="504.5" y1="102.5" y2="215.5"/>
+  <line fill="none" id="svg_200" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5" x1="573.5" x2="539.5" y1="81.5" y2="235.5"/>
+  <line fill="none" id="svg_201" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5" x1="420.5" x2="395.5" y1="80.5" y2="240.5"/>
+  <line fill="none" id="svg_202" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5" x1="360.5" x2="348.5" y1="78.5" y2="138.5"/>
+  <line fill="none" id="svg_203" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5" x1="116.5" x2="97.5" y1="82.5" y2="228.5"/>
+  <line fill="none" id="svg_204" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5" x1="75.5" x2="53.5" y1="81.5" y2="202.5"/>
+  <line fill="none" id="svg_205" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5" x1="27.5" x2="99.5" y1="261.5" y2="263.5"/>
+  <line fill="none" id="svg_206" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5" x1="49.5" x2="128.5" y1="267.5" y2="269.5"/>
+  <line fill="none" id="svg_207" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5" x1="75.5" x2="119.5" y1="272.5" y2="274.5"/>
+  <line fill="none" id="svg_208" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5" x1="34.5" x2="95.5" y1="296.5" y2="297.5"/>
+  <line fill="none" id="svg_209" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5" x1="51.5" x2="114.5" y1="301.5" y2="302.5"/>
+  <line fill="none" id="svg_210" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5" x1="397.5" x2="452.5" y1="291.5" y2="291.5"/>
+  <line fill="none" id="svg_211" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5" x1="407.5" x2="475.5" y1="295.5" y2="296.5"/>
+  <ellipse class="snow" cx="73.5" cy="9.5" fill="#FF0000" id="svg_3" rx="" ry="1" stroke="#ffffff" stroke-width="5"/>
+  <ellipse class="snow" cx="106.5" cy="21.5" fill="#FF0000" id="svg_4" rx="1" ry="1" stroke="#ffffff" stroke-width="5"/>
+  <ellipse class="snow" cx="157.5" cy="14.5" fill="#FF0000" id="svg_7" rx="1" ry="1" stroke="#ffffff" stroke-width="5"/>
+  <ellipse class="snow" cx="72.5" cy="8" fill="#FF0000" id="svg_8" rx="2" ry="2" stroke="#ffffff" stroke-width="5"/>
+  <ellipse Class="snow" cx="228.5" cy="15.5" fill="#ffffff" id="svg_11" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="305.5" cy="11.5" fill="#ffffff" id="svg_12" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="330.5" cy="26.5" fill="#ffffff" id="svg_13" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="405.5" cy="14.5" fill="#ffffff" id="svg_14" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="457.5" cy="24.5" fill="#ffffff" id="svg_15" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="532.5" cy="12.5" fill="#ffffff" id="svg_16" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="474.5" cy="90.5" fill="#ffffff" id="svg_17" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="513.5" cy="54.5" fill="#ffffff" id="svg_22" rx="4" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="390.5" cy="54.5" fill="#ffffff" id="svg_23" rx="4" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="324.5" cy="84.5" fill="#ffffff" id="svg_29" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="170.5" cy="83.5" fill="#ffffff" id="svg_44" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="102.5" cy="90.5" fill="#ffffff" id="svg_51" rx="4" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="34.5" cy="105.5" fill="#ffffff" id="svg_52" rx="4" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="49.5" cy="135.5" fill="#ffffff" id="svg_53" rx="4" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="95.5" cy="141.5" fill="#ffffff" id="svg_54" rx="4" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="136.5" cy="124.5" fill="#ffffff" id="svg_56" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="176.5" cy="126.5" fill="#ffffff" id="svg_57" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="215.5" cy="95.5" fill="#ffffff" id="svg_58" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="296.5" cy="120.5" fill="#ffffff" id="svg_59" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="285.5" cy="89.5" fill="#ffffff" id="svg_61" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="341.5" cy="106.5" fill="#ffffff" id="svg_62" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="384.5" cy="110.5" fill="#ffffff" id="svg_63" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="451.5" cy="129.5" fill="#ffffff" id="svg_67" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="500.5" cy="126.5" fill="#ffffff" id="svg_72" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="551.5" cy="128.5" fill="#ffffff" id="svg_74" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="603.5" cy="137.5" fill="#ffffff" id="svg_77" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="554.5" cy="157.5" fill="#ffffff" id="svg_79" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="485.5" cy="163.5" fill="#ffffff" id="svg_81" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="603.5" cy="86.5" fill="#ffffff" id="svg_82" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="276.5" cy="39.5" fill="#ffffff" id="svg_83" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="20.5" cy="158.5" fill="#ffffff" id="svg_84" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="63.5" cy="183.5" fill="#ffffff" id="svg_85" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="175.5" cy="164.5" fill="#ffffff" id="svg_86" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="126.5" cy="166.5" fill="#ffffff" id="svg_87" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="264.5" cy="174.5" fill="#ffffff" id="svg_88" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="318.5" cy="165.5" fill="#ffffff" id="svg_89" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="220.5" cy="174.5" fill="#ffffff" id="svg_90" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="419.5" cy="170.5" fill="#ffffff" id="svg_91" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="444.5" cy="187.5" fill="#ffffff" id="svg_92" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="532.5" cy="185.5" fill="#ffffff" id="svg_93" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="586.5" cy="179.5" fill="#ffffff" id="svg_94" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="565.5" cy="209.5" fill="#ffffff" id="svg_95" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="524.5" cy="225.5" fill="#ffffff" id="svg_96" rx="5" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="466.5" cy="213.5" fill="#ffffff" id="svg_97" rx="5" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="421.5" cy="231.5" fill="#ffffff" id="svg_98" rx="5" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="402.5" cy="258.5" fill="#ffffff" id="svg_99" rx="5" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="351.5" cy="228.5" fill="#ffffff" id="svg_100" rx="5" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="349.5" cy="191.5" fill="#ffffff" id="svg_101" rx="5" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="285.5" cy="197.5" fill="#ffffff" id="svg_102" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="108.5" cy="211.5" fill="#ffffff" id="svg_103" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="55.5" cy="227.5" fill="#ffffff" id="svg_104" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="83.5" cy="245.5" fill="#ffffff" id="svg_105" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="41.5" cy="263.5" fill="#ffffff" id="svg_106" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="99.5" cy="274.5" fill="#ffffff" id="svg_107" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="596.5" cy="235.5" fill="#ffffff" id="svg_108" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="566.5" cy="262.5" fill="#ffffff" id="svg_109" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="601.5" cy="273.5" fill="#ffffff" id="svg_110" rx="5" ry="5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="624.5" cy="211.5" fill="#ffffff" id="svg_111" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="544.5" cy="289.5" fill="#ffffff" id="svg_112" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="433.5" cy="282.5" fill="#ffffff" id="svg_113" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="355.5" cy="274.5" fill="#ffffff" id="svg_114" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="222.5" cy="234.5" fill="#ffffff" id="svg_115" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="185.5" cy="242.5" fill="#ffffff" id="svg_116" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="192.5" cy="279.5" fill="#ffffff" id="svg_117" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="246.5" cy="274.5" fill="#ffffff" id="svg_118" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="183.5" cy="195.5" fill="#ffffff" id="svg_119" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="134.5" cy="245.5" fill="#ffffff" id="svg_120" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="123.5" cy="292.5" fill="#ffffff" id="svg_121" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="68.5" cy="308.5" fill="#ffffff" id="svg_122" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="243.5" cy="306.5" fill="#ffffff" id="svg_123" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow"  cx="403.5" cy="313.5" fill="#ffffff" id="svg_124" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="261.5" cy="338.5" fill="#ffffff" id="svg_125" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="288.5" cy="355.5" fill="#ffffff" id="svg_126" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="178.5" cy="341.5" fill="#ffffff" id="svg_127" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow"  cx="113.5" cy="343.5" fill="#ffffff" id="svg_128" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="21.5" cy="282.5" fill="#ffffff" id="svg_129" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="15.5" cy="208.5" fill="#ffffff" id="svg_130" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="577.5" cy="290.5" fill="#ffffff" id="svg_131" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow"  cx="470.5" cy="301.5" fill="#ffffff" id="svg_132" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="612.5" cy="296.5" fill="#ffffff" id="svg_133" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="618.5" cy="34.5" fill="#ffffff" id="svg_134" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="185.5" cy="57.5" fill="#ffffff" id="svg_135" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow"  cx="12.5" cy="46.5" fill="#ffffff" id="svg_136" rx="4" ry="4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="10.5" cy="89.5" fill="#ffffff" id="svg_137" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="square" stroke-linejoin="null" stroke-width="0"/>
+  <ellipse class="snow" cx="38.5" cy="-29.5" fill="#FF0000" id="svg_9" rx="2" ry="2" stroke="#ffffff" stroke-width="5"/>
+  <ellipse class="snow" cx="100.5" cy="-25.5" fill="#FF0000" id="svg_10" rx="2" ry="2" stroke="#ffffff" stroke-width="5"/>
+  <ellipse class="snow" cx="193.5" cy="-31.5" fill="#FF0000" id="svg_138" rx="2" ry="2" stroke="#ffffff" stroke-width="5"/>
+  <ellipse class="snow" cx="155.5" cy="-45.5" fill="#FF0000" id="svg_139" rx="2" ry="2" stroke="#ffffff" stroke-width="5"/>
+  <ellipse class="snow" cx="250.5" cy="-33.5" fill="#FF0000" id="svg_140" rx="2" ry="2" stroke="#ffffff" stroke-width="5"/>
+  <ellipse class="snow" cx="295.5" cy="-58.5" fill="#FF0000" id="svg_141" rx="2" ry="2" stroke="#ffffff" stroke-width="5"/>
+  <ellipse class="snow" cx="318.5" cy="-31.5" fill="#FF0000" id="svg_145" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="355.5" cy="-48.5" fill="#FF0000" id="svg_146" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="386.5" cy="-60.5" fill="#FF0000" id="svg_147" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="371.5" cy="-14.5" fill="#FF0000" id="svg_148" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="280.5" cy="-20.5" fill="#FF0000" id="svg_149" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="369.5" cy="-13.5" fill="#FF0000" id="svg_150" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="427.5" cy="-27.5" fill="#FF0000" id="svg_151" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="481.5" cy="-19.5" fill="#FF0000" id="svg_152" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="504.5" cy="-51.5" fill="#FF0000" id="svg_153" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="547.5" cy="-54.5" fill="#FF0000" id="svg_154" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="583.5" cy="-77.5" fill="#FF0000" id="svg_155" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="576.5" cy="-33.5" fill="#FF0000" id="svg_156" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="441.5" cy="-61.5" fill="#FF0000" id="svg_157" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="383.5" cy="-87.5" fill="#FF0000" id="svg_158" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="217.5" cy="-87.5" fill="#FF0000" id="svg_159" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="159.5" cy="-94.5" fill="#FF0000" id="svg_160" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="107.5" cy="-89.5" fill="#FF0000" id="svg_161" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="59.5" cy="-80.5" fill="#FF0000" id="svg_162" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="74.5" cy="-114.5" fill="#FF0000" id="svg_163" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="272.5" cy="-107.5" fill="#FF0000" id="svg_164" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="329.5" cy="-92.5" fill="#FF0000" id="svg_165" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="475.5" cy="-102.5" fill="#FF0000" id="svg_166" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="522.5" cy="-120.5" fill="#FF0000" id="svg_167" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="518.5" cy="-85.5" fill="#FF0000" id="svg_168" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="576.5" cy="-6.5" fill="#FF0000" id="svg_169" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="565.5" cy="-122.5" fill="#FF0000" id="svg_170" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="413.5" cy="-116.5" fill="#FF0000" id="svg_171" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="360.5" cy="-141.5" fill="#FF0000" id="svg_172" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="310.5" cy="-163.5" fill="#FF0000" id="svg_173" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="225.5" cy="-152.5" fill="#FF0000" id="svg_174" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="160.5" cy="-156.5" fill="#FF0000" id="svg_175" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="125.5" cy="-127.5" fill="#FF0000" id="svg_176" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="451.5" cy="-153.5" fill="#FF0000" id="svg_177" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="503.5" cy="-164.5" fill="#FF0000" id="svg_178" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="543.5" cy="-165.5" fill="#FF0000" id="svg_179" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="632.5" cy="-133.5" fill="#FF0000" id="svg_180" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="602.5" cy="-147.5" fill="#FF0000" id="svg_181" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="618.5" cy="-58.5" fill="#FF0000" id="svg_182" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="3.5" cy="-121.5" fill="#FF0000" id="svg_183" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="22.5" cy="-66.5" fill="#FF0000" id="svg_184" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="43.5" cy="-171.5" fill="#FF0000" id="svg_185" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="97.5" cy="-190.5" fill="#FF0000" id="svg_186" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="188.5" cy="-210.5" fill="#FF0000" id="svg_187" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="254.5" cy="-196.5" fill="#FF0000" id="svg_188" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="363.5" cy="-197.5" fill="#FF0000" id="svg_189" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="413.5" cy="-186.5" fill="#FF0000" id="svg_190" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="463.5" cy="-205.5" fill="#FF0000" id="svg_191" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="509.5" cy="-205.5" fill="#FF0000" id="svg_192" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="574.5" cy="-204.5" fill="#FF0000" id="svg_193" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <ellipse class="snow" cx="121.5" cy="-230.5" fill="#FF0000" id="svg_194" rx="2" ry="2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/> 
+  <text id="mytext" x="5" y="425" fill="red">Fijne feestdagen en een gezond 2019!</text>
+
+</svg>
+   
+<style>
+ #mytext{
+     Position: relative;
+     fill: red;
+     font-family: monospace;
+     font-size:30px;
+     font-weight: 700;
+    }
+
+ 
+    .svg-snowscene {
+  width: 100%;
+}
+.snow {
+  color:white;
+  animation-name: snowing;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear ;
+ 
+}
+
+@keyframes snowing {
+  0%{ opacity: 1; }
+  100% { opacity: 1;
+    transform: translateY(200px);
+  }
+
+
+
+
+
+
+</style>
+</body>
+</html>
