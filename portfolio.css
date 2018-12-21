@@ -1,0 +1,233 @@
+body, html{
+height:100%;
+margin:0;
+font-size:16px;
+font-family:"Lato", sans-serif;
+font-weight:400;
+line-height:1.8em;
+color:#666;
+}
+
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+    position:relative;
+    opacity:0.80;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    /*
+    fixed=parralax
+    scroll=normal
+    */
+}
+
+/* foto's*/
+
+.pimg1{
+    background-image:url("tunnel.jpeg");
+    min-height:100%;
+}
+
+.pimg2{
+    
+    background-image:url("regen.jpeg");
+    min-height:100%;
+}
+
+.pimg3{
+    background-image:url("wittemuur.jpeg");
+    min-height:50%;
+}
+
+.pimg4{
+    background-image:url("fotoweg1.jpg");
+    min-height:40%;
+}
+
+/* menu bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+
+/*sections*/
+
+.section{
+    text-align: center;
+    padding:10px 20px;
+    
+}
+
+.section-light{
+    background-color:#f4f4f4;
+    color:#666;
+    font-size: 13px; 
+    text-align: center;
+}
+
+.image{
+    float:right;
+    top:0%;
+}
+
+
+
+.section-dark{
+    background-color:#2c475c;
+    color:#c2c5c2;
+    text-shadow: black 0.1em 0.1em 0.3em; 
+    font-size: 13px; 
+    
+}
+
+/* text*/
+
+.ptext2{
+    position:absolute;
+    top:10%;
+    width:100%;
+    text-align:center;
+    color:#00FF00;
+    text-shadow: black 0.2em 0.2em 0.3em; 
+    text-shadow: black 0.1em 0.1em 0.3em; 
+    font-size:40px;
+    font-weight: 750;
+    letter-spacing:10px;
+    text-transform: :
+    
+    }
+
+.ptext{
+position:absolute;
+top:26%;
+width:100%;
+text-align:center;
+color:#000;
+font-size:50px;
+letter-spacing:15px;
+text-transform:uppercase;
+
+}
+
+#pictures{
+    position: absolute;
+    margin:200px;
+    margin-top:50px;
+    padding:10px;
+    
+    z-index:-1;
+    
+    
+    
+}
+.cert{
+    border: 4px solid #2c475c;
+    margin: 5px;
+    margin-bottom: 20px;
+    box-shadow:black 0.1em 0.1em 0.3em; 
+}
+
+
+}
+.ptext .border{
+background-color:#2c475c;
+padding:10px;
+font-size: 3vw;
+color:#00FF00;
+opacity:1;
+}
+
+.border1{
+    font-size:6vw;
+    color:#00FF00;
+    font-weight: 700;
+    letter-spacing: 30px;
+    text-align: center;
+    text-shadow: black 0.1em 0.1em 0.3em; 
+    
+}
+.border2{
+    font-size: 4.5vw;
+    font-weight:600;
+    color:#00FF00;
+    opacity:1;
+    
+}
+
+.border3{
+    font-size: 8vw;
+    font-weight:600;
+    color:#00FF00;
+    opacity:1;
+    text-shadow: black 0.1em 0.1em 0.3em; 
+   
+
+}
+
+.border4{
+    font-size: 4,5vw;
+    font-weight:600;
+    color:#00FF00;
+    opacity:1;
+    text-shadow: black 0.1em 0.1em 0.3em; 
+   
+
+}
+
+
+
+
+#move{
+    width: 100%;
+}
+.container{
+position: relative;
+width:100%;
+height:100%;
+text-align:center;
+margin:0;
+padding: 0;
+}
+
+.press{
+    opacity:0,5;
+    background-color: #00FF00;
+    color:#2c475c;
+
+}
+
+
+
+/*
+foto's vastzetten voor telefoonschermen
+*/
+
+@media(max-width:568px){
+    .pimg1, .pimg2, .pimg3, .img4{
+        background-attachment:scroll;
+    }
+
+}
+
+
