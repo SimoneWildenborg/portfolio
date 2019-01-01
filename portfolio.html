@@ -8,18 +8,41 @@
 
 <link rel="stylesheet" href="portfolio.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
 <script src="portfolio.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+	var zero = 0;
+	$(document).ready(function(){
+		$(window).on('scroll',function(){ 
+			$('.navbar').toggleClass('hide', $(window).scrollTop()
+			> zero);
+			zero = $(window).scrollTop();
+		})
+	})
 
 
+
+
+</script>
 </head>
 
-<body>
+<body id="main-content">
+	<div class="navbar">
 		
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#section1 section-dark">About me</a></li>
+			<li><a href="#">My education</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">Contact</a></li>
+
+		</ul>
+	</div>
 
 <div class="pimg1">
 		<div class="ptext">
 			<span class="border1">
+
 					Portfolio
 				</span>
 				<br/>
@@ -77,7 +100,7 @@
 </div>
 
 <section class="section1 section-dark">
-		
+			
 			
 			<img class="image2" src="ik.jpg" width="300vw" height="300vh" alt="">
 			
@@ -134,7 +157,7 @@
 		<br>
 		<ins>Hackathon 29th and 30th of November 2018</ins>
 		<br>
-		We had to build a community-page as addition to the website of "the cee spot". 
+		We had to build a community-page as addition to the website of <a href="https://www.theceespot.nl/">"the cee spot"</a>. 
 		I only had the knowledge from the Sololearn courses. It was hard but so much fun!
 		<br>
 		<br>
@@ -154,7 +177,7 @@
 </section>
 
 <div class="pimg3">
-	<div class="ptext">
+	<div class="ptext3">
 		<span class="border3">
 			Hackathon
 		</span>
@@ -211,14 +234,9 @@
 </section>
 
 
-
-
-
-
-
 <div class="pimg1">
 	<div class="ptext">
-		<span class="border">
+		<span class="border5">
 			Projects
 		</span>
 	</div>
