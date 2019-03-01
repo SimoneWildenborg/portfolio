@@ -1,5 +1,6 @@
 #main-content, html{
 height:100%;
+width: 100%;
 margin:0;
 font-size:16px;
 font-family:"Lato", sans-serif;
@@ -9,7 +10,6 @@ color:#666;
 }
 
 .navbar{
-    
     position: fixed;
     top: 0;
     left: 0;
@@ -27,15 +27,14 @@ color:#666;
 .navbar ul{
     margin: 0;
     padding: 0;
-    
     display: flex;
-    float: left;
+    float: center;
     background: rgba(44,71,92,0.5);
 }
 
 .navbar ul li{
-    margin-left:2.5em;
-    margin-right: 2.5em;
+    margin-left:2.5vw;
+    margin-right: 2.5vw;
     list-style: none;
     line-height: 3.5vw;
     text-align: center;
@@ -43,9 +42,8 @@ color:#666;
 
 .navbar ul li a{
     display: block;
-    
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 5vw;
+    padding-right: 5vw;
     text-decoration: none;
     color: #00ff00;
     opacity: 0.8;
@@ -79,23 +77,23 @@ color:#666;
 
 .pimg1{
     background-image:url("tunnel.jpeg");
-    min-height:100%;
+    height:100%;
 }
 
 .pimg2{
     
     background-image:url("wand.jpeg");
-    min-height:73%;
+    height:69%;
 }
 
 .pimg3{
     background-image:url("door.jpeg");
-    min-height:60%;
+    height:60%;
 }
 
 .pimg4{
     background-image:url("fotoweg1.jpg");
-    min-height:40%;
+    height:40%;
 }
 
 /* menu bar*/
@@ -175,26 +173,32 @@ color:#666;
     
 }
 
-#section .image4{
-    padding-bottom: 40px;
-    padding-top: 40px;
-    border-radius: 10%;
+.image4{
+    width: 25%;
+    height: auto;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
     margin-right: 50px;
+  
+}
+.image4:hover{
+    width:60%;
+    height: auto;
+    transition: 1.5s;
+}
+.hoverClass {
+    transition: all 1.5s ease-in-out;
 }
 
-.image5{
-    padding-bottom: 40px;
-    padding-top: 40px;
-    border-radius: 5px;
-    margin-left: 50px;
-}
+
+
 /* text*/
 
 
 
 .ptext{
     position:absolute;
-    top:26%;
+    top:35%;
     width:100%;
     text-align:center;
     color:#000;
@@ -204,7 +208,8 @@ color:#666;
 
 .ptext2{
     position:absolute;
-    top:10%;
+    top: 17%;
+    text-outline: 20vw;
     width:100%;
     text-align:center;
     color:#00FF00;
@@ -229,7 +234,6 @@ color:#666;
 }
 .ptext4{
     position:relative;
-    
     width:100%;
     text-align: center;
     color:#000;
@@ -238,10 +242,9 @@ color:#666;
     }
 
 #pictures{
-    
     position: absolute;
-    margin:6vw;
-    margin-top:31vh;
+    margin:0;
+    margin-top:29vh;
     padding: 0.7%;
     padding-right: 10px;
     transform: translate (-50%, -50%);
@@ -383,80 +386,159 @@ padding: 0;
 .press{
     opacity:0,5;
     background-color: #00FF00;
-    color:#2c475c;
-
+    color:#0f8816;
 }
 
 /*GRIDbox*/
-.wrapper{
+.grid-container{
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-columns: auto / auto auto auto auto;
-    grid-template-rows: auto / auto auto;
-}
-.box1{
-    margin:0;
-    width: 100%;
-    height: 50vh;
-    grid-column: 1;
-    grid-row: 1;
+    grid-template-columns: auto auto auto;
 }
 
-.box2{
-    margin: 0;
-    width: 100%;
-    height: 50vh;
-    grid-column: 2;
-    grid-row: 1;
-    
+.grid-item1{
+    border: 3px solid #000;
+    font-size: 20px;
+    background-color: rgba(44, 761, 8, 0.5);
 }
-.box3{
-    margin: 0;
-    width: 100%;
-    height: 50vh;
-    grid-column: 3;
-    grid-row: 1;
-    
+.grid-item1:hover{
+    background-color: rgba(44, 761, 8, 0);
 }
-.box4{
-    margin: 0;
-    width: 100%;
-    height: 50vh;
-    grid-column: 4;
-    grid-row: 1;
-    
+.cv{
+    position: relative;
+    left: 1vw;
+    top:40%;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
 }
-.box5{
-    width: 100%;
-    height: 50vh;
-    grid-column: 1;
-    grid-row: 2;
-    
+.cv:hover{
+    color: #00ff00;
+    font-size: 30px;
+    transition: 1s;
 }
-.box6{
-    margin: 0;
-    width: 100%;
-    height: 50vh;
-    grid-column: 2;
-    grid-row: 2;
-    
+
+
+.grid-item2{
+    border: 3px solid #000;
+    font-size: 20px;
+    background-color: rgba(44, 761, 8, 0.5);
 }
-.box7{
-    margin: 0;
-    width: 100%;
-    height: 50vh;
-    grid-column: 3;
-    grid-row: 2;
-    
+.grid-item2:hover{
+    background-color: rgba(44, 761, 8, 0);
 }
-.box8{
-    margin: 0;
-    width: 100%;
-    height: 50vh;
-    grid-column: 4;
-    grid-row: 2;
-   
+.cvspw{
+    position: relative;
+    left: 1vw;
+    top:40%;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+}
+.cvspw:hover{
+    color: #00ff00;
+    font-size: 30px;
+    transition: 1s;
+}
+
+
+.grid-item3{
+    border: 3px solid #000;
+    font-size: 20px;
+    background-color: rgba(44, 761, 8, 0.5);
+}
+.grid-item3:hover{
+    background-color: rgba(44, 761, 8, 0);
+}
+.leerplan{
+    position: relative;
+    left: 1vw;
+    top:40%;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+}
+.leerplan:hover{
+    color: #00ff00;
+    font-size: 30px;
+    transition: 1s;
+}
+
+
+.grid-item4{
+    border: 3px solid #000;
+    font-size: 20px;
+    background-color: rgba(44, 761, 8, 0.5);
+}
+.grid-item4:hover{
+    background-color: rgba(44, 761, 8, 0);
+}
+.rekenen{
+    position: relative;
+    left: 1vw;
+    top:40%;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+}
+.rekenen:hover{
+    color: #00ff00;
+    font-size: 30px;
+    transition: 1s;
+}
+
+
+.grid-item5{
+    border: 3px solid #000;
+    font-size: 20px;
+    background-color: rgba(44, 761, 8, 0.5);
+}
+.grid-item5:hover{
+    background-color: rgba(44, 761, 8, 0);
+}
+.kerst{
+    position: relative;
+    left: 1vw;
+    top:40%;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+}
+.kerst:hover{
+    color: #00ff00;
+    font-size: 30px;
+    transition: 1s;
+}
+
+
+.grid-item6{
+    border: 3px solid #000;
+    font-size: 20px;
+    background-color: rgba(44, 761, 8, 0.5);
+}
+.grid-item6:hover{
+    background-color: rgba(44, 761, 8, 0);
+}
+
+.nmbmnd{
+    position: relative;
+    left: 1vw;
+    top:40%;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+}
+.nmbmnd:hover{
+    color: #00ff00;
+    font-size: 30px;
+    transition: 1s;
 }
 
 
@@ -465,7 +547,7 @@ foto's vastzetten voor telefoonschermen
 */
 
 @media(max-width:568px){
-    .pimg1, .pimg2, .pimg3, .pimg4 .cert .cert1 .cert2 .cert3 .cert4{
+    .pimg1, .pimg2, .pimg3, .pimg4 /*.cert .cert1 .cert2 .cert3 .cert4*/{
         background-attachment:scroll;
     }
 
