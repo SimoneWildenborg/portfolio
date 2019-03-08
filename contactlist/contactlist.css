@@ -1,7 +1,81 @@
-ul li{	
-	border: 2px solid black;
-	padding: 20px;
-	background-color:LightSkyBlue;
+body{
+	margin: 0;
+	width: 100%;
+	background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+}
+.fopneus{
+	margin-left: 32vw;
+	float: center;
+}
+.inputl{
+	float: center;
+	width: 50vw;
+	margin-left: 30px;
+}
+.inputr{
+	width: 40vw;
+	margin-right: 18px;
+}
+#myFilterBox{
+	background-color:#fff6a5;
+	padding-left:40px;
+	margin: 2px;
+	width: 25%;
+	height: 6%;
+	border: 2px solid #000;
+}
+.myFilterBox{
+	padding: 5px;
+	margin-right: 2px;
+	height: 6%;
+	border: 2px solid #000;
+	background: black;
+	color:#fff6a5;
+}
+#myNewName{
+	background-color:#fff6a5;
+	padding-left:40px;
+	float:left;
+	margin: 2px;
+	width: 25%;
+	height: 6%;
+	border: 2px solid #000;
+}
+.myNewName{
+	background: black;
+	color:#fff6a5;
+	float:left;
+	margin: 2px;
+	height: 6%;
+	border: 2px solid #000;
+}
+
+.header{
+	font-size: 10vw;
+	text-align: center;
+	color:white;
+	text-shadow: 3px 3px 8px #000;
+}
+#myList{	
+	padding: 10px;
+	float:center;
 	list-style-type:none;
 	margin:2px;
 }
+ul li{	
+	width: 50%;
+	border: 2px solid black;
+	padding: 20px;
+	background: #fff6a5;
+	list-style-type:none;
+	
+}
+.list{
+	float: center;
+}
+li{
+	margin-left: 23vw;
+	margin-bottom:1vw;
+}
+
+

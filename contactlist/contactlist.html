@@ -1,10 +1,9 @@
 <html>
 <head>
-<link rel= "stylesheet" href="index.css">
+<link rel= "stylesheet" href="contactlist.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-
 //toevoegen
-
 function voegIemandToe(){
 var node = document.createElement("LI");  
 var sNaam = document.getElementById("myNewName").value;              			 // Create a <li> node
@@ -12,37 +11,33 @@ var textnode = document.createTextNode(sNaam);         // Create a text node
 node.appendChild(textnode);                              // Append the text to <li>
 document.getElementById("myList").appendChild(node);     // Append <li> to <ul> with id="myList"
 }
-
 //filteren
-
-function myFilterFunction()
-{
-	var sSearchWord = document.getElementById("myFilterBox").value;
-	console.log(sSearchWord);
-
-
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById("myFilterBox");
-  filter = input.value.toUpperCase();
-
-  ul = document.getElementById("myList");
-  li = ul.getElementsByTagName('li');
-
-
-  
-  for (i = 0; i < li.length; i++) {
-    
-    txtValue = li[i].innerHTML;   
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
+function myFilterFunction() {
+    var sSearchWord = document.getElementById("myFilterBox").value;
+    console.log(sSearchWord);
 }
 
-//lijst sorteren
+function myFilterFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myFilterBox");
+    filter = input.value.toUpperCase();
 
+    ul = document.getElementById("myList");
+    li = ul.getElementsByTagName('li');
+
+    for (i = 0; i < li.length; i++) {
+        txtValue = li[i].innerHTML;
+
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+
+//lijst sorteren
 function sortList() {
   var list, i, switching, b, shouldSwitch;
   list = document.getElementById("myList");
@@ -74,26 +69,41 @@ function sortList() {
     }
   }
 }
-
 </script>
 
 
 </head>
 <body>
-
-<input id="myFilterBox" type="text" onkeyup="myFilterFunction();" placeholder="filter">
-<input id="myNewName" type="text" placeholder="New contact">
-<button onclick="voegIemandToe();">Add</button>
-<button onclick="sortList();">Sort</button>
-
-
+  
+    <div><p class="header">Contactlist</p></div>
+    <div class="fopneus">
+      <div class="inputl">
+        <input id="myNewName" type="text" placeholder="New contact" required>
+        <button class="myNewName" onclick="voegIemandToe();">Add</button>
+      </div>
+      <div class="inputr">
+        <input id="myFilterBox" type="text" onkeyup="myFilterFunction();" placeholder="filter">
+        <button class="myFilterBox" onclick="sortList();">Zoek</button><BR>
+      </div>
+    </div>
+<BR>
+<BR>
+  <BR>
+    <BR>
+<div class="list">
 	<ul id="myList">
 		<li>Toos</li>
 		<li>Marie</li>
-		<li>Simone</li>
+    <li>Simone</li>
+    <li>Carla</li>
+		<li>Piet</li>
+    <li>Kees</li>
+    <li>Constant</li>
+		<li>Anke</li>
+		<li>Randalph</li>
 	</ul>
 
-
+</div>
 
 
 </body>
